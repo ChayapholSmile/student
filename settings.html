@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>การตั้งค่าชีต</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container my-5">
+    <h1>การตั้งค่าชีต</h1>
+    <div class="mb-3">
+      <label for="sheetSelect" class="form-label">เลือกชีตที่ต้องการตั้งค่า</label>
+      <select id="sheetSelect" class="form-select" onchange="loadColumnSettings()"></select>
+    </div>
+    <h2>ตั้งค่าคอลัมน์</h2>
+    <div id="columnSettings"></div>
+    <button class="btn btn-primary" id="saveSettingsBtn">บันทึกการตั้งค่า</button>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
